@@ -1,0 +1,343 @@
+/* seção 3 começo------------------------------------------------------------------------------------------------------ */
+
+h2{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--color-black);
+
+    padding: 150px 0 0 170px;
+    width: 700px;
+    margin-bottom: 80px;
+
+    position: relative;
+}
+
+
+h2 img{
+    height: 130px;
+
+    position: absolute;
+    left: 100px;
+    bottom: 8px;
+}
+
+
+#tecnologias{
+    background-color: rgba(211, 194, 194, 0.219);
+
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+
+.tecnologia{
+    position: relative;
+}
+
+.tecnologia img{
+    width: 80px;
+    margin: 30px 0 0 20px;
+}
+
+
+.borda{
+   border-left: 2px dashed rgb(82, 82, 82);
+   border-right: 2px dashed rgb(82, 82, 82);
+
+   padding: 0 25px 0 25px;
+}
+
+
+.tecnologia h3{
+    color: var(--color-black);
+    font-size: 25px;
+
+    padding: 20px 0 40px 20px;
+}
+
+
+.tecnologia p{
+    color: var(--color-gray);
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+.tecnologia div{
+    height: 100%;
+}
+
+
+#tecnologias + div{
+    display: flex;
+    justify-content: center;
+}
+
+
+#tecnologias + div button{
+    margin-top: 100px;
+    padding: 30px 65px 30px 65px;
+    font-size: 20px;
+}
+
+
+#tecnologias + div button:hover{
+    transform: translateX(-50%);
+    animation: var(--animation);
+    box-shadow: 5px 5px 50px #0077ff;
+}
+
+/* seção 3 fim------------------------------------------------------------------------------------------------------ */
+
+
+
+/* seção 4 começo------------------------------------------------------------------------------------------------------ */
+
+#container-info2{
+    background-image:  linear-gradient(225deg,rgb(23, 41, 201) 0%,rgb(0, 0, 0) 105%);
+
+
+    margin-top: 130px;
+    width: 100%;
+    padding: 30px;
+}
+
+
+#info2{
+    height: 100%;
+    width: 1100px;
+
+    margin: auto;
+    padding: 0 15px 30px 15px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+
+    border: 5px solid white;
+    border-radius: 8px;
+}
+
+
+#info2 div:nth-child(1){
+    padding-top: 50px;
+}
+
+
+#info2 div:nth-child(1) p:nth-child(1){
+    color: white;
+    font-weight: bold;
+    font-size: 65px;
+
+    margin-bottom: 40px;
+
+}
+
+
+#info2 div:nth-child(1) p:nth-child(2){
+    color: var(--color-gray);
+    font-size: 25px;
+    line-height: 35px;
+}
+
+
+#info2 div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* seção 4 fim------------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1100px) {
+    #info2 {
+      width: 100%;
+    }
+  }
+
+@media screen and (max-width: 1060px){
+    #tecnologias{
+        width: 90%;
+        padding: 50px 30px 0 0;
+
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+        grid-row-gap: 80px;
+    }
+
+
+    .tecnologia{
+        display: grid;
+        grid-template: 1fr / 20% 80%;
+    }
+
+
+    .tecnologia img{
+        margin: 0;
+
+        margin: auto 0 auto 30px;
+    }
+
+
+    .borda{
+        border-left: none;
+        border-right: none;
+     
+        padding: 0;
+     }
+
+
+     .tecnologia h3{
+        padding: 0;
+        margin-top: 20px;
+    }
+
+
+    .react-margin{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    #info2{
+        grid-template: 1fr 1fr / 1fr;
+
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    h2{
+        font-size: 45px;
+        padding: 150px 0 0 20px;
+        width: 100%;
+    }
+
+
+    h2 img{
+        display: none;
+    }
+
+
+
+    .tecnologia{
+        grid-template: 35% 65% / 1fr;
+    }
+
+
+    #tecnologias{
+        padding: 50px 30px 0 40px;
+    }
+
+
+    .tecnologia img{
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    #info2 div:nth-child(2) img{
+        width: 300px;
+    }
+
+
+    #info2{
+        grid-template: 2fr 1fr / 1fr;
+
+    }
+}
+
+
+@media screen and (max-width: 395px){
+    #info2 div:nth-child(2) img{
+        width: 200px;
+    }
+
+
+    #info2{
+        grid-template: 3fr 1fr / 1fr;
+
+    }
+}
+
+
+@media screen and (max-width: 340px){
+    h2{
+        font-size: 30px;
+    }
+
+
+    .tecnologia{
+        grid-template: 25% 75% / 1fr;
+    }
+
+
+    .tecnologia img{
+        margin: auto;
+    }
+
+
+    .tecnologia h3{
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+
+    .tecnologia p{
+        text-align: center;
+    }
+
+
+    #tecnologias{
+        width: 100%;
+    }
+
+
+    #tecnologias + div button{
+        width: 90%;
+        font-size: 18px;
+    }
+
+
+
+    #info2 div:nth-child(1) p:nth-child(1){
+        font-size: 35px;
+    }
+
+
+    #info2 div:nth-child(1) p:nth-child(2){
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 290px){
+    #info2 div:nth-child(2) img{
+        width: 150px;
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 250px){
+    #info2 div:nth-child(1) p:nth-child(1){
+        font-size: 30px;
+    }
+
+
+    #info2 div:nth-child(1) p:nth-child(2){
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 230px){
+    #info2{
+        border: none;
+    }
+}
