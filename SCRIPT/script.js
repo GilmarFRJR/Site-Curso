@@ -34,6 +34,31 @@ $("#fechar-video").mouseenter(()=>{
 
 // FAQ------------------------------------------------------------------------------------------------------
 
+$('.resposta').hide();
+  
+$('.pergunta').click(function() {
+  var resposta = $(this).next('.resposta');
+  
+  if (resposta.is(':visible')) {
+    resposta.slideUp(200);
+    $(this).find(".seta").css('transform', 'translateY(-45%)')
+  } else {
+    $('.resposta').slideUp(200);
+    resposta.slideDown(200);
+    $(".seta").css('transform', 'translateY(-45%)')
+    $(this).find(".seta").css('transform', 'translateY(-45%) rotate(180deg)')
+  }
+});
+
+
+
+
+
+
+
+
+
+
 $('.ver-mais').append('<p>VER MAIS</p>').click(function(){
 
     let verMais = 'VER MAIS'

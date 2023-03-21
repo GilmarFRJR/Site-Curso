@@ -15,7 +15,7 @@
 
 .container-pergunta{
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     width: 85%;
 }
 
@@ -32,14 +32,15 @@
 }
 
 
-.pergunta img{
+.seta{
     width: 50px;
     position: absolute;
     right: 15px;
     top: 50%;
 
-    transform: translateY(-45%)
-    rotate(180deg);
+    transition: 0.3s;
+
+    transform: translateY(-45%);
 }
 
 
@@ -106,7 +107,7 @@ footer{
     background-color: #0051ff;
     text-align: center;
 
-    margin-top: 260px;
+    margin-top: 420px;
     padding: 0 15px 0 15px;
 
     display: flex;
