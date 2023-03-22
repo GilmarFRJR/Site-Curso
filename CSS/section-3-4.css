@@ -41,7 +41,7 @@ h2 img{
 
 .tecnologia img{
     width: 80px;
-    margin: 30px 0 0 20px;
+    margin: 20px 0 0 20px;
 }
 
 
@@ -164,7 +164,7 @@ h2 img{
         padding: 50px 30px 0 0;
 
         grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
-        grid-row-gap: 80px;
+        grid-row-gap: 30px;
     }
 
 
@@ -224,7 +224,8 @@ h2 img{
 
 
     .tecnologia{
-        grid-template: 35% 65% / 1fr;
+        grid-template: 1fr 3fr / 1fr;
+
     }
 
 
@@ -315,10 +316,15 @@ h2 img{
 }
 
 
-@media screen and (max-width: 290px){
+@media screen and (max-width: 300px){
     #info2 div:nth-child(2) img{
         width: 150px;
         height: 200px;
+    }
+
+
+    #tecnologias{
+        grid-row-gap: 70px;
     }
 }
 
@@ -336,8 +342,13 @@ h2 img{
 }
 
 
-@media screen and (max-width: 230px){
+@media screen and (max-width: 244px){
     #info2{
         border: none;
+    }
+
+
+    .tecnologia p{
+        margin-bottom: 20px;
     }
 }
